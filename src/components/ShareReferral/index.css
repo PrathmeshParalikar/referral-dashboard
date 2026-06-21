@@ -1,0 +1,99 @@
+.referral-wrapper {
+  width: 100%;
+}
+
+.referral-title {
+  margin: 0 0 28px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.referral-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.referral-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.referral-label {
+  margin-bottom: 12px;
+
+  color: #7c8798;
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.referral-copy-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.referral-input {
+  flex: 1;
+
+  height: 56px;
+
+  border: 1px solid #e6e9f5;
+  border-radius: 12px;
+
+  background: #fafbff;
+
+  padding: 0 20px;
+
+  font-size: 16px;
+  color: #0f172a;
+
+  outline: none;
+}
+
+.copy-btn {
+  height: 56px;
+  min-width: 90px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #6366f1;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.copy-btn:hover {
+  background: #5558ee;
+}
+
+@media screen and (max-width: 992px) {
+  .referral-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .referral-copy-row {
+    flex-direction: column;
+  }
+
+  .copy-btn {
+    width: 100%;
+  }
+
+  .referral-input {
+    width: 100%;
+  }
+}

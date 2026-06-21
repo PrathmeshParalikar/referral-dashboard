@@ -1,0 +1,49 @@
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.overview-card {
+  background: #fafbff;
+  border: 1px solid #e6e9f5;
+  border-radius: 12px;
+
+  padding: 20px;
+  min-height: 140px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-icon {
+  width: 36px;
+  height: 36px;
+
+  background: #6c63ff;
+  color: white;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+
+  margin-bottom: 18px;
+}
+
+.overview-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+
+  margin: 0 0 10px;
+}
+
+.overview-label {
+  font-size: 14px;
+  color: #7c8798;
+  margin: 0;
+}

@@ -1,0 +1,95 @@
+.navbar {
+  height: 80px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 60px;
+
+  border-bottom: 1px solid #edf1f7;
+}
+
+.navbar-logo {
+  margin: 0;
+
+  color: #6366f1;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.trial-button {
+  height: 40px;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 0 20px;
+
+  background: #6366f1;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.logout-button {
+  height: 40px;
+
+  border-radius: 12px;
+
+  padding: 0 20px;
+
+  background: white;
+
+  color: #ef4444;
+
+  border: 1px solid #fca5a5;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.navbar-logo {
+  margin: 0;
+
+  color: #6366f1;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.navbar-logo:hover {
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar-actions {
+    gap: 8px;
+  }
+
+  .trial-button,
+  .logout-button {
+    padding: 0 12px;
+    font-size: 12px;
+  }
+}

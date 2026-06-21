@@ -1,0 +1,56 @@
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.service-card {
+  background: #fafbff;
+  border: 1px solid #e6e9f5;
+  border-radius: 12px;
+
+  padding: 20px 24px;
+
+  min-height: 105px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-heading {
+  margin: 0 0 14px;
+
+  color: #7c8798;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.service-value {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.service-name {
+  color: #4f46e5;
+}
+
+@media screen and (max-width: 992px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,180 @@
+.referral-table-wrapper {
+  width: 100%;
+}
+
+.table-title {
+  margin: 0 0 28px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 28px;
+}
+
+.search-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-label {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.search-input {
+  width: 300px;
+  height: 48px;
+
+  border: 1px solid #e6e9f5;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  padding: 0 18px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.sort-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sort-label {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.sort-select {
+  height: 48px;
+
+  border: 1px solid #e6e9f5;
+  border-radius: 12px;
+
+  padding: 0 16px;
+
+  background: white;
+
+  font-size: 14px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.referrals-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.referrals-table thead tr {
+  background: #f3f6fb;
+}
+
+.referrals-table th {
+  text-align: left;
+
+  padding: 18px;
+
+  color: #64748b;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.referrals-table td {
+  padding: 22px 18px;
+
+  border-bottom: 1px solid #edf1f7;
+
+  color: #1e293b;
+
+  font-size: 15px;
+}
+
+.table-row {
+  cursor: pointer;
+}
+
+.table-row:hover {
+  background: #fafbff;
+}
+
+.profit-cell {
+  color: #6366f1 !important;
+  font-weight: 600;
+}
+
+.pagination-section {
+  margin-top: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entries-text {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.page-btn {
+  min-width: 44px;
+  height: 44px;
+
+  border: 1px solid #e6e9f5;
+  border-radius: 12px;
+
+  background: white;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.active-page {
+  background: #6366f1;
+  color: white;
+  border: none;
+}
+
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .table-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .pagination-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
